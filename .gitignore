@@ -1,3 +1,9 @@
+build/
+.vscode/
+
+# AileVM programs
+*.lvm
+
 # Prerequisites
 *.d
 
