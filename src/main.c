@@ -71,51 +71,6 @@ int main(int argc, const char* argv[])
 	}
 	fclose(file);
 
-	for (int i = 0; i < MEM_SIZE; ++i)
-	{
-		if (i % 8 == 0)
-		{
-			printf("%3x: ", i);
-		}
-		printf("%2x ", MEM[i]);
-		if (i % 8 == 7)
-		{
-			printf("\n");
-		}
-	}
-
 	return 0;
 }
 
-/*
-int func(void* c)
-{
-	for (int i = 0; i < 100; ++i)
-	{
-		printf(c);
-	}
-	return 0;
-}
-
-int main(int argc, const char** argv)
-{
-	FILE* f = fopen("test.dat", "rb");
-	if (!feof(f))
-	{
-		for (char c = fgetc(f); !feof(f); c = fgetc(f))
-		{
-			printf("%c", c);
-		}
-	}
-	fclose(f);
-
-	thrd_t ft, st;
-	thrd_create(&ft, func, "1");
-	thrd_create(&st, func, "2");
-	printf("0");
-	thrd_join(ft, nullptr);
-	thrd_join(st, nullptr);
-
-	return 0;
-}
-*/
