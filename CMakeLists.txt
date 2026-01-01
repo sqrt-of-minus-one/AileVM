@@ -5,11 +5,20 @@ project(lvm
 
 set(CMAKE_C_STANDARD 23)
 
+set(SOURCE_INSTRUCTIONS
+	src/instructions/get_operand.c
+	src/instructions/00_nop.c
+	src/instructions/01_info.c
+	src/instructions/08_jmp.c)
+
 set(SOURCE_EXE
-	src/mem.c
-	src/properties.c
 	src/file_util.c
 	src/file.c
+	src/mem.c
+	src/properties.c
+	src/registers.c
+	src/run.c
+	${SOURCE_INSTRUCTIONS}
 	src/main.c)
 
 add_executable(lvm64 ${SOURCE_EXE})

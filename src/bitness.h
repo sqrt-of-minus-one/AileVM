@@ -31,6 +31,8 @@
 #	define AILE_BYTES 8
 	typedef uint64_t uintN_t;
 	typedef int64_t intN_t;
+	typedef uint16_t uint_small;
+	typedef int16_t int_small;
 #	define UINTN_MAX UINT64_MAX
 #	define INTN_MAX INT64_MAX
 #	define INTN_MIN INT64_MIN
@@ -39,6 +41,8 @@
 #	define AILE_BYTES 4
 	typedef uint32_t uintN_t;
 	typedef int32_t intN_t;
+	typedef uint16_t uint_small;
+	typedef int16_t int_small;
 #	define UINTN_MAX UINT32_MAX
 #	define INTN_MAX INT32_MAX
 #	define INTN_MIN INT32_MIN
@@ -47,6 +51,8 @@
 #	define AILE_BYTES 2
 	typedef uint16_t uintN_t;
 	typedef int16_t intN_t;
+	typedef uint8_t uint_small;
+	typedef int8_t int_small;
 #	define UINTN_MAX UINT16_MAX
 #	define INTN_MAX INT16_MAX
 #	define INTN_MIN INT16_MIN

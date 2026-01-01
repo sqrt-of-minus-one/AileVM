@@ -1,12 +1,15 @@
 ////////////////////////////////////////////
 /////         AileVM by sqrt(-1)         //
 ////                                    //
-///  File: vm.h                        //
+///  File: properties.h                //
 ////////////////////////////////////////
 
 #pragma once
 
 #include "mem.h"
+
+extern const uint8_t VM_ID[8];
+extern const uint16_t VM_VER[3];
 
 typedef enum ESize : uint8_t
 {
